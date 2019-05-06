@@ -17,6 +17,8 @@
 
     <div class="container">
 
+         <%= new java.util.Date() %>
+         
         <form:form method="POST" modelAttribute="userForm" class="form-signin">
             <h2 class="form-signin-heading">Create your account</h2>
             <spring:bind path="username">

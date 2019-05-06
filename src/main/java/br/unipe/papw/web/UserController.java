@@ -1,6 +1,7 @@
 package br.unipe.papw.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -13,7 +14,7 @@ import br.unipe.papw.validator.UserValidator;
 
 @Controller
 public class UserController {
-    @Autowired
+    @Autowired    
     private UserService userService;
 
     @Autowired
